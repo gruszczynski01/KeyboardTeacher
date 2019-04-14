@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controllers.Screen3Controller"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="529.0" prefWidth="816.0" style="-fx-background-color: #F29F05;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Screen3Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="65.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="GRATULACJE" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="AppleGothic Regular" size="45.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="146.0" prefHeight="23.0" prefWidth="433.0" text="TEKST ZOSTAŁ PRZEPISANY POPRAWNIE" textFill="#695d46">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="B_tryAgain" layoutX="22.0" layoutY="419.0" mnemonicParsing="false" onAction="#onB_tryAgain" prefHeight="72.0" prefWidth="340.0" style="-fx-background-color: #BF4904; -fx-background-radius: 30px;" text="SPRÓBUJ PONOWNIE" textFill="#e4c58b">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_changeText" layoutX="455.0" layoutY="419.0" mnemonicParsing="false" onAction="#onB_changeText" prefHeight="72.0" prefWidth="340.0" style="-fx-background-color: #BF4904; -fx-background-radius: 30px;" text="ZMIEŃ TEKST" textFill="#e4c58b">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="218.0" prefHeight="23.0" prefWidth="433.0" text="Twój wynik to X znaków na minutę." textFill="#695d46">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="265.0" prefHeight="23.0" prefWidth="433.0" text="Zatwierdziłeś Y błędnych lini." textFill="#695d46">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

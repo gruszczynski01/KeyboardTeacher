@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 
 import java.net.URL;
@@ -17,5 +18,11 @@ public class Screen3Controller implements Initializable, IControlledScreen {
     @Override
     public void setScreenParent(ScreensController screenParent) {
         myController = screenParent;
+    }
+
+    public void onB_tryAgain(ActionEvent actionEvent) {
+    }
+
+    public void onB_changeText(ActionEvent actionEvent) {
     }
 }
