@@ -48,7 +48,7 @@
             <Glow />
          </effect>
       </Label>
-      <Label layoutX="12.0" layoutY="297.0" prefHeight="57.0" prefWidth="764.0" text="W momencie naciśniecia przycisku rozpocznie się test przepisywania oraz stoper rozpocznie pracę. Przygotuj się!" textAlignment="CENTER" textFill="#695d46" wrapText="true">
+      <Label layoutX="12.0" layoutY="297.0" prefHeight="57.0" prefWidth="764.0" textAlignment="CENTER" textFill="#695d46" wrapText="true">
          <font>
             <Font name="Arial" size="16.0" />
          </font>

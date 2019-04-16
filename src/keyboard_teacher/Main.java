@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Scanner;
 
 public class Main extends Application {
@@ -16,8 +18,10 @@ public class Main extends Application {
     public static String screen2FXML = "Screen2.fxml";
     public static String screen3ID = "summaryScreen";
     public static String screen3FXML = "Screen3.fxml";
-    public static File selectedFile;
-    public static Scanner mainScanner;
+
+
+
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -34,6 +38,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.setTitle("KeyboardTeacher");
         primaryStage.show();
+
 
     }
 

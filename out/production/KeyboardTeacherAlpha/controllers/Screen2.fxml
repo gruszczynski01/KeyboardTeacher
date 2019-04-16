@@ -10,7 +10,7 @@
 
 <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="529.0" prefWidth="816.0" style="-fx-background-color: #F29F05;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Screen2Controller">
    <children>
-      <TextField fx:id="TF_rewrittenText" layoutX="48.0" layoutY="273.0" prefHeight="78.0" prefWidth="729.0" promptText="Tutaj wprowadź tekst" style="-fx-background-color: WHITE; -fx-border-color: #BF4904; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);">
+      <TextField fx:id="TF_rewrittenText" editable="false" layoutX="48.0" layoutY="273.0" onKeyPressed="#onTF_rewrittenText" prefHeight="78.0" prefWidth="729.0" promptText="Tutaj wprowadź tekst" style="-fx-background-color: WHITE; -fx-border-color: #BF4904; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);">
          <font>
             <Font name="Arial Italic" size="13.0" />
          </font>
@@ -18,7 +18,7 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <Text fx:id="TF_textFromFile" layoutX="65.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chďż˝tnie by miaďż˝ jednďż˝ z nich. Ale nie byďż˝o warto. Byďż˝y tak ďż˝adnie szablonowe. " textAlignment="CENTER" wrappingWidth="695.2060546875" />
+      <Text fx:id="TF_textFromFile" layoutX="38.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKT TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER. Powodzenia :)" textAlignment="CENTER" wrappingWidth="741.0000143051147" />
       <Label alignment="CENTER" layoutX="154.0" layoutY="24.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="Przepisz linie poniżej" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="AppleGothic Regular" size="45.0" />
@@ -30,6 +30,14 @@
       <Label alignment="CENTER" layoutX="158.0" layoutY="392.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="Aby zatwierdzić kliknij enter" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="AppleGothic Regular" size="19.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label fx:id="TF_errorNotification" alignment="CENTER" layoutX="38.0" layoutY="239.0" lineSpacing="3.0" prefHeight="26.0" prefWidth="741.0" textAlignment="JUSTIFY" textFill="#d3183e" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="AppleGothic Regular" size="15.0" />
          </font>
          <effect>
             <Glow />

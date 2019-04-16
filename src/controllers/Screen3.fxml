@@ -31,7 +31,7 @@
             <Font name="Arial" size="26.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="192.0" layoutY="218.0" prefHeight="23.0" prefWidth="433.0" text="Twój wynik to X znaków na minutę." textFill="#695d46">
+      <Label fx:id="L_scoore" alignment="CENTER" layoutX="192.0" layoutY="218.0" prefHeight="23.0" prefWidth="433.0" text="Twój wynik to X znaków na minutę." textFill="#695d46">
          <font>
             <Font name="Arial" size="20.0" />
          </font>

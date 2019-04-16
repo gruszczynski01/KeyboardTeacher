@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -24,7 +25,6 @@ public class ScreensController extends StackPane {
         return screens.get(name);
     }
 
-    //loads fxml, add the screen to the collectionns and inject the screenPane to the controller
     public boolean loadScreen(String name, String resource)
     {
         //loads fxml to loader
@@ -64,4 +64,5 @@ public class ScreensController extends StackPane {
             return true;
         }
     }
+
 }
