@@ -40,7 +40,7 @@
             <Font name="Arial" size="26.0" />
          </font>
       </Button>
-      <Label fx:id="TF_errorNotification" alignment="CENTER" layoutX="112.0" layoutY="266.0" lineSpacing="3.0" prefHeight="26.0" prefWidth="509.0" textAlignment="JUSTIFY" textFill="#d3183e" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Label fx:id="TF_errorNotification" alignment="CENTER" layoutX="35.0" layoutY="265.0" lineSpacing="3.0" prefHeight="26.0" prefWidth="719.0" textAlignment="JUSTIFY" textFill="#d3183e" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="AppleGothic Regular" size="15.0" />
          </font>

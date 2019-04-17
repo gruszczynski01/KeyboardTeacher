@@ -10,12 +10,14 @@ import javafx.scene.text.Text;
 import keyboard_teacher.Main;
 import keyboard_teacher.TextCoordinator;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Instant;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 import static keyboard_teacher.TextCoordinator.*;
 
@@ -79,9 +81,6 @@ public class Screen2Controller implements IControlledScreen, Initializable {
         TF_rewrittenText.setText("");
     }
     public boolean ifTextsAreTheSame(){
-        System.out.println("file...." + TF_textFromFile.getText() + "....");
-        System.out.println("user...." + TF_rewrittenText.getText() + "....");
-        System.out.println("SAME: " + TF_rewrittenText.getText().equals(TF_textFromFile.getText()));
         return TF_rewrittenText.getText().equals(TF_textFromFile.getText());
     }
     public void actionsOnGoodAnswer(){
@@ -101,14 +100,17 @@ public class Screen2Controller implements IControlledScreen, Initializable {
     }
     public void actionsOnLastLineGoodAnswered(){
         TextCoordinator.stop = Instant.now();
+        resetFields();
+        TF_rewrittenText.setEditable(false);
+        TF_textFromFile.setText("WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKT TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER. Powodzenia :)");
         myController.setScreen(Main.screen3ID);
+
     }
     public void actionsOnFirstLine(){
         TF_textFromFile.setText(mainScanner.nextLine());//setting new line from file
         TextCoordinator.start = Instant.now();//starting time counting
         ifFirstLine = false;//changing flag after first line setted
         TF_rewrittenText.setEditable(true);
-        //lastGoodAnswer = false;
     }
 
 

@@ -31,15 +31,37 @@
             <Font name="Arial" size="26.0" />
          </font>
       </Button>
-      <Label fx:id="L_scoore" alignment="CENTER" layoutX="192.0" layoutY="218.0" prefHeight="23.0" prefWidth="433.0" text="Twój wynik to X znaków na minutę." textFill="#695d46">
+      <Label fx:id="L_scroore" alignment="CENTER" layoutX="27.0" layoutY="218.0" prefHeight="23.0" prefWidth="749.0" text="Twój wynik to X znaków na minutę." textFill="#695d46">
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="192.0" layoutY="265.0" prefHeight="23.0" prefWidth="433.0" text="Zatwierdziłeś Y błędnych lini." textFill="#695d46">
+      <Label fx:id="L_howManyMistakes" alignment="CENTER" layoutX="108.0" layoutY="265.0" prefHeight="23.0" prefWidth="600.0" text="Zatwierdziłeś Y błędnych lini." textFill="#695d46">
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="AP_showResultPreScreen" nodeOrientation="LEFT_TO_RIGHT" prefHeight="529.0" prefWidth="816.0" style="-fx-background-color: #F29F05;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="154.0" layoutY="65.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="GRATULACJE" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="AppleGothic Regular" size="45.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="192.0" layoutY="146.0" prefHeight="23.0" prefWidth="433.0" text="TEKST ZOSTAŁ PRZEPISANY POPRAWNIE" textFill="#695d46">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="B_showResult" layoutX="249.0" layoutY="215.0" mnemonicParsing="false" onAction="#onB_showResult" prefHeight="72.0" prefWidth="340.0" style="-fx-background-color: #BF4904; -fx-background-radius: 30px;" text="POKAŻ WYNIKI" textFill="#e4c58b">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

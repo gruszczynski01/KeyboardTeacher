@@ -35,7 +35,7 @@
             <Glow />
          </effect>
       </Label>
-      <Label fx:id="TF_errorNotification" alignment="CENTER" layoutX="38.0" layoutY="239.0" lineSpacing="3.0" prefHeight="26.0" prefWidth="741.0" textAlignment="JUSTIFY" textFill="#d3183e" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Label fx:id="TF_errorNotification" alignment="CENTER" layoutX="38.0" layoutY="239.0" lineSpacing="3.0" prefHeight="26.0" prefWidth="774.0" textAlignment="JUSTIFY" textFill="#d3183e" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="AppleGothic Regular" size="15.0" />
          </font>

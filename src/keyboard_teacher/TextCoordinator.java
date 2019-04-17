@@ -50,4 +50,17 @@ public class TextCoordinator {
         }
         return -1;
     }
+    public static double setSessionTime(Instant start, Instant stop){//only seconds
+        Duration sessionTime =  Duration.between(start, stop);
+        double seconds = sessionTime.getSeconds();
+        double nano = sessionTime.getNano();
+        nano/=1000000000;//?
+        seconds+=nano;
+
+
+        return seconds;
+    }
+    public static String charPerSeconds(double seconds, int characters){
+        return String.format("%.2f", (double)characters/seconds);
+    }
 }
