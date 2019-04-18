@@ -18,7 +18,10 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <Text fx:id="TF_textFromFile" layoutX="38.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKT TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER. Powodzenia :)" textAlignment="CENTER" wrappingWidth="741.0000143051147" />
+      <Text fx:id="TF_textFromFile" layoutX="38.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKT TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER. Powodzenia :)" textAlignment="CENTER" wrappingWidth="741.0000143051147">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Text>
       <Label alignment="CENTER" layoutX="154.0" layoutY="24.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="Przepisz linie poniżej" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="AppleGothic Regular" size="45.0" />

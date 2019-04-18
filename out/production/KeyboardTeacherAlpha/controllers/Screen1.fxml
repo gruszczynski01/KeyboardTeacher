@@ -53,5 +53,13 @@
             <Font name="Arial" size="16.0" />
          </font>
       </Label>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="497.0" lineSpacing="3.0" prefHeight="26.0" prefWidth="509.0" text="Gruszczynski Szymon 2019 Summer E-xperience Allegro" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
    </children>
 </AnchorPane>

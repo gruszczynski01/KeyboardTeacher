@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KeyboardTeacherAlpha:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen3.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen3Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen3Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/keyboard_teacher/TextCoordinator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/keyboard_teacher/TextCoordinator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/controllers/Screen2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KeyboardTeacherAlpha/keyboard_teacher/QuickFunctionsTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/Screen1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Screen1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Screen1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Screen1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/Screen2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Screen2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Screen2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Screen2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Screen3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Screen3.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Screen3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Screen3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard_teacher/TextCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard_teacher/TextCoordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/TextCoordinatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TextCoordinatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard_teacher/QuickFunctionsTest.java" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,7 +117,7 @@
               <entry file="file://$PROJECT_DIR$/src/keyboard_teacher/TextCoordinator.java">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="413">
-                    <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+                    <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -144,11 +147,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/Screen1Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="116" column="13" lean-forward="true" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+            <state relative-caret-position="214">
+              <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,30 +185,16 @@
         <entry file="file://$PROJECT_DIR$/src/controllers/IControlledScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controllers/Screen3Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-              </folding>
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/keyboard_teacher/QuickFunctionsTest.java">
+        <entry file="file://$PROJECT_DIR$/src/controllers/Screen3Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="424">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,7 +242,6 @@
         <option value="$PROJECT_DIR$/src/controllers/Screen3.fxml" />
         <option value="$PROJECT_DIR$/src/controllers/ScreensController.java" />
         <option value="$PROJECT_DIR$/src/keyboard_teacher/Main.java" />
-        <option value="$PROJECT_DIR$/src/controllers/Screen1Controller.java" />
         <option value="$PROJECT_DIR$/src/tests/Screen2ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/keyboard_teacher/QuickTMPTesting.java" />
         <option value="$PROJECT_DIR$/src/keyboard_teacher/QuickFunctionsTest.java" />
@@ -261,6 +249,7 @@
         <option value="$PROJECT_DIR$/src/tests/TextCoordinatorTest.java" />
         <option value="$PROJECT_DIR$/src/controllers/Screen2Controller.java" />
         <option value="$PROJECT_DIR$/src/controllers/Screen3Controller.java" />
+        <option value="$PROJECT_DIR$/src/controllers/Screen1Controller.java" />
       </list>
     </option>
   </component>
@@ -338,6 +327,9 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
@@ -542,7 +534,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1554935478914" duration="6581000" />
       <workItem from="1555010919100" duration="5299000" />
-      <workItem from="1555090030941" duration="77956000" />
+      <workItem from="1555090030941" duration="82902000" />
     </task>
     <servers />
   </component>
@@ -579,7 +571,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91138000" />
+    <option name="totallyTimeSpent" value="96084000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -594,11 +595,11 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2614458" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2614458" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Problems" order="9" />
@@ -608,7 +609,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Terminal" order="16" weight="0.21445782" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="16" visible="true" weight="0.21445782" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -819,17 +820,7 @@
     <entry file="file://$PROJECT_DIR$/src/controllers/IControlledScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/Screen1Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="116" column="13" lean-forward="true" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -876,10 +867,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/keyboard_teacher/TextCoordinator.java">
+    <entry file="file://$PROJECT_DIR$/src/controllers/Screen3Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="424">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/Screen1Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -902,17 +903,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/Screen3Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/keyboard_teacher/TextCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+        <state relative-caret-position="413">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>KeyboardTeacherAlpha:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

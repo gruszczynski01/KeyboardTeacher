@@ -76,8 +76,9 @@ public class Screen1Controller  implements IControlledScreen, Initializable
         }
         if (selectedFile != null) {
             try {
-                System.out.println("FILE EXTENSION: " + getFileExtension(selectedFile));
+                //System.out.println("FILE EXTENSION: " + getFileExtension(selectedFile));
                 if (selectedFile.exists() && getFileExtension(selectedFile).equals(".txt")) {
+                    TF_errorNotification.setText("");
                     myController.setScreen(Main.screen2ID);
                 } else {
                     TF_errorNotification.setText("Wskazany plik nie istnieje lub nie jest plikiem z rozszerzeniem .TXT, wybierz inny plik");
