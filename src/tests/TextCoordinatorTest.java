@@ -20,6 +20,7 @@ class TextCoordinatorTest {
         assertEquals(3, TextCoordinator.indexOfMistake("ALLEGRO", "ALLLEGRO"));
         assertEquals(5, TextCoordinator.indexOfMistake("ALLEGRO", "ALLEG"));
         assertEquals(7, TextCoordinator.indexOfMistake("ALLEGRO", "ALLEGROS"));
+        assertEquals(0, TextCoordinator.indexOfMistake("ALLEGRO", "R"));
         //assertEquals(TextCoordinator.indexOfMistake());
     }
 }

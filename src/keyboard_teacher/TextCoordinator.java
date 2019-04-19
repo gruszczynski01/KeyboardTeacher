@@ -28,20 +28,20 @@ public class TextCoordinator {
         if (rewrittenText.length() == 0)
             return 0;
         else if (originalText.length() == rewrittenText.length()) {
-            for (int i = 0; i < originalText.length() - 1; i++) {
+            for (int i = 0; i <= originalText.length() - 1; i++) {
                 if (originalText.toCharArray()[i] != rewrittenText.toCharArray()[i]) {
                     return i;
                 }
             }
         }else if (originalText.length() < rewrittenText.length()) {
-            for (int i = 0; i < originalText.length() - 1; i++) {
+            for (int i = 0; i <= originalText.length() - 1; i++) {
                 if (originalText.toCharArray()[i] != rewrittenText.toCharArray()[i]) {
                     return i;
                 }
             }
             return originalText.length();
         }else if(originalText.length() > rewrittenText.length()){
-            for (int i = 0; i < rewrittenText.length() - 1; i++) {
+            for (int i = 0; i <= rewrittenText.length() - 1; i++) {
                 if (originalText.toCharArray()[i] != rewrittenText.toCharArray()[i]) {
                     return i;
                 }

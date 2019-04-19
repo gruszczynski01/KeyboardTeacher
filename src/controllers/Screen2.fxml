@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
@@ -18,11 +19,11 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <Text fx:id="TF_textFromFile" layoutX="38.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKT TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER. Powodzenia :)" textAlignment="CENTER" wrappingWidth="741.0000143051147">
+      <Text fx:id="TF_textFromFile" layoutX="38.0" layoutY="197.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="text-underline-position: under;" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKST TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER." textAlignment="CENTER" wrappingWidth="741.0000143051147">
          <font>
             <Font name="Arial" size="16.0" />
          </font></Text>
-      <Label alignment="CENTER" layoutX="154.0" layoutY="24.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="Przepisz linie poniżej" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Label alignment="CENTER" layoutX="154.0" layoutY="24.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="Przepisz linię poniżej" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="AppleGothic Regular" size="45.0" />
          </font>
@@ -46,5 +47,10 @@
             <Glow />
          </effect>
       </Label>
+      <Button fx:id="B_cancel" layoutX="684.0" layoutY="436.0" mnemonicParsing="false" onAction="#onB_cancel" prefHeight="45.0" prefWidth="95.0" style="-fx-border-color: #BF4904; -fx-border-radius: 30px; -fx-background-radius: 30px; -fx-background-color: #BF4904; -fx-cursor: hand;" text="Anuluj" textFill="#e4c58b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -36,7 +36,8 @@ public class Main extends Application {
         root.getChildren().addAll(screensContainer);
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("KeyboardTeacher");
+        primaryStage.setTitle("KeyboardTeacher - Gruszczyński Szymon - Allegro Summer E-xperience 2019");
+        primaryStage.setResizable(false);
         primaryStage.show();
 
 

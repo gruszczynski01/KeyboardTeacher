@@ -46,8 +46,6 @@ public class Screen1Controller  implements IControlledScreen, Initializable
 
     @FXML
     void onB_choosePath(ActionEvent event) {
-        //String empty = "";
-        //TF_errorNotification.
         FileChooser fc = new FileChooser();
         fc.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("TXT files (*.TXT)", "*.TXT"),
@@ -56,7 +54,6 @@ public class Screen1Controller  implements IControlledScreen, Initializable
         if(selectedFile != null) {
             try {
                 TF_path.setText(selectedFile.getPath());
-                System.out.println(selectedFile.getPath());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -67,7 +64,6 @@ public class Screen1Controller  implements IControlledScreen, Initializable
 
     @FXML
     void onB_start(ActionEvent event) {
-        //sprawdzanko pliku
         try {
             selectedFile = new File(TF_path.getText());
             mainScanner = new Scanner(selectedFile);
@@ -76,7 +72,6 @@ public class Screen1Controller  implements IControlledScreen, Initializable
         }
         if (selectedFile != null) {
             try {
-                //System.out.println("FILE EXTENSION: " + getFileExtension(selectedFile));
                 if (selectedFile.exists() && getFileExtension(selectedFile).equals(".txt")) {
                     TF_errorNotification.setText("");
                     myController.setScreen(Main.screen2ID);
@@ -84,7 +79,7 @@ public class Screen1Controller  implements IControlledScreen, Initializable
                     TF_errorNotification.setText("Wskazany plik nie istnieje lub nie jest plikiem z rozszerzeniem .TXT, wybierz inny plik");
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         } else {
             System.out.println("File is not valid");
@@ -106,7 +101,6 @@ public class Screen1Controller  implements IControlledScreen, Initializable
     @Override
     public void setScreenParent(ScreensController screenParent) {
         myController = screenParent;
-        //screenParent.myTestFunction(Main.mainScanner.nextLine());
     }
     private static String getFileExtension(File file) {
         String extension = "";

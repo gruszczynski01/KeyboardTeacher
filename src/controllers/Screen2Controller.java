@@ -1,7 +1,9 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -11,10 +13,7 @@ import keyboard_teacher.Main;
 import keyboard_teacher.TextCoordinator;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.time.Instant;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -24,7 +23,6 @@ import static keyboard_teacher.TextCoordinator.*;
 public class Screen2Controller implements IControlledScreen, Initializable {
 
     ScreensController myController;
-    static boolean ifStarted = false;
 
     @FXML
     private TextField TF_rewrittenText;
@@ -37,10 +35,30 @@ public class Screen2Controller implements IControlledScreen, Initializable {
     private Text TF_textFromFile;
 
     @FXML
+    private Button B_cancel;
+
+    @FXML
+    void onB_cancel(ActionEvent event) {
+        ifFirstLine = true;
+        try {
+            mainScanner = new Scanner(selectedFile);
+        } catch (FileNotFoundException e) {
+            System.out.println("Something wrong with loading file again");
+        }
+        resetFields();
+        TF_rewrittenText.setEditable(false);
+        TF_textFromFile.setText("WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKST TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER.");
+        totalSumOfMistakes = 0;
+        myController.setScreen(Main.screen1ID);
+
+    }
+
+
+    @FXML
     public void onTF_rewrittenText(KeyEvent event) {
         if(event.getCode() == KeyCode.ENTER && !mainScanner.hasNextLine())
         {
-            if (ifTextsAreTheSame()) {//DOBRZE
+            if (ifTextsAreTheSame()) {//GOOD
                 actionsOnGoodAnswer();
                 actionsOnLastLineGoodAnswered();
             } else {//ŹLE
@@ -50,7 +68,7 @@ public class Screen2Controller implements IControlledScreen, Initializable {
         if (event.getCode() == KeyCode.ENTER && !ifFirstLine) {
             if (mainScanner.hasNextLine() || lastGoodAnswer == false) {
 
-                if (ifTextsAreTheSame()) {//DOBRZE
+                if (ifTextsAreTheSame()) {//GOOD
                     actionsOnGoodAnswer();
                 } else {//ŹLE
                     actionsOnBadAnswer();
@@ -102,7 +120,7 @@ public class Screen2Controller implements IControlledScreen, Initializable {
         TextCoordinator.stop = Instant.now();
         resetFields();
         TF_rewrittenText.setEditable(false);
-        TF_textFromFile.setText("WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKT TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER. Powodzenia :)");
+        TF_textFromFile.setText("WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKST TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER.");
         myController.setScreen(Main.screen3ID);
 
     }
