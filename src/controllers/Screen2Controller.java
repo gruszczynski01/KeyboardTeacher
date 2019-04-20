@@ -11,7 +11,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
 import keyboard_teacher.Main;
 import keyboard_teacher.TextCoordinator;
-
 import java.io.FileNotFoundException;
 import java.net.URL;
 import java.time.Instant;

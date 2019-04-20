@@ -4,8 +4,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
-import javafx.scene.text.Text;
-
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -42,11 +40,11 @@ public class ScreensController extends StackPane {
     }
 
     public boolean setScreen(final String name){
-        if(screens.get(name) != null){//any screen is loaded in the collections
-            if(!getChildren().isEmpty()){ //any screen is already displayed
+        if(screens.get(name) != null){
+            if(!getChildren().isEmpty()){
                 getChildren().remove(0);
                 getChildren().add(0, screens.get(name));
-            }else{//no screen displayed
+            }else{
                 getChildren().add(screens.get(name));
             }
             return true;

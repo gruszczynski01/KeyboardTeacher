@@ -64,7 +64,6 @@ public class Screen3Controller implements Initializable, IControlledScreen {
 
     @FXML
     void onB_tryAgain(ActionEvent event) {
-        //PORESETOWAC WIECEJ ZMIENNYCH - MOZE UBRAC TO W FUNKCJE
         ifFirstLine = true;
         try {
             mainScanner = new Scanner(selectedFile);
@@ -73,7 +72,6 @@ public class Screen3Controller implements Initializable, IControlledScreen {
         }
         AP_showResultPreScreen.setVisible(true);
         totalSumOfMistakes = 0;
-       // myController.loadScreen(Main.screen2ID, Main.screen2FXML);
         myController.setScreen(Main.screen2ID);
     }
 

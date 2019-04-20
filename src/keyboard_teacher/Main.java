@@ -6,10 +6,6 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Scanner;
 
 public class Main extends Application {
     public static String screen1ID = "homeScreen";
