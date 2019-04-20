@@ -38,6 +38,9 @@ public class Screen2Controller implements IControlledScreen, Initializable {
     private Button B_cancel;
 
     @FXML
+    private Text TF_goodRewrittenText;
+
+    @FXML
     void onB_cancel(ActionEvent event) {
         ifFirstLine = true;
         try {
@@ -97,6 +100,8 @@ public class Screen2Controller implements IControlledScreen, Initializable {
     public void resetFields(){
         TF_errorNotification.setText("");
         TF_rewrittenText.setText("");
+        TF_textFromFile.setStyle("-fx-fill: black;");
+        TF_goodRewrittenText.setText("");
     }
     public boolean ifTextsAreTheSame(){
         return TF_rewrittenText.getText().equals(TF_textFromFile.getText());
@@ -111,8 +116,8 @@ public class Screen2Controller implements IControlledScreen, Initializable {
     }
     public void actionsOnBadAnswer(){
         TF_errorNotification.setText("BŁĄD W ZNAKU O INDEKSIE " + indexOfMistake(TF_textFromFile.getText(), TF_rewrittenText.getText()) + ". Popraw błąd i spróbuj ponownie");
-        //POKOLOROWANIE STRINGA - opcjonalnie
-
+        TF_goodRewrittenText.setText(TF_textFromFile.getText().substring(0, indexOfMistake(TF_textFromFile.getText(), TF_rewrittenText.getText())));
+        TF_textFromFile.setStyle("-fx-fill: red;");
         totalSumOfMistakes++;
         lastGoodAnswer = false;
     }

@@ -19,9 +19,9 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <Text fx:id="TF_textFromFile" layoutX="38.0" layoutY="197.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="text-underline-position: under;" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKST TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER." textAlignment="CENTER" wrappingWidth="741.0000143051147">
+      <Text fx:id="TF_textFromFile" layoutX="33.0" layoutY="198.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="text-underline-position: under;" text="WCIŚNIJ ENTER ABY ROZPOCZĄĆ, WYŚWIETLI SIĘ TEKST TO PRZEPISANIA ORAZ URUCHOMIONY ZOSTANIE STOPER." wrappingWidth="751.0000143051147">
          <font>
-            <Font name="Arial" size="16.0" />
+            <Font name="Arial" size="13.0" />
          </font></Text>
       <Label alignment="CENTER" layoutX="154.0" layoutY="24.0" lineSpacing="3.0" prefHeight="66.0" prefWidth="509.0" text="Przepisz linię poniżej" textAlignment="JUSTIFY" textFill="#bf4904" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
@@ -52,5 +52,10 @@
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Button>
+      <Text fx:id="TF_goodRewrittenText" fill="#158a08" layoutX="33.0" layoutY="198.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="text-underline-position: under;" wrappingWidth="751.0000143051147">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
